@@ -33,7 +33,6 @@ jobs:
 
       - name: Generate Go Code from Proto Files
         run: |
-          mkdir -p proto
           find my-protos/proto -name "*.proto" | while read file; do
             protoc \
               --proto_path=my-protos \
