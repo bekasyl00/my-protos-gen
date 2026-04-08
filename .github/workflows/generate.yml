@@ -29,7 +29,7 @@ jobs:
 
       - name: Clone Proto Files Repository
         run: |
-          git clone https://github.com/beka00/my-protos.git
+          git clone https://github.com/bekasyl00/my-protos.git
 
       - name: Generate Go Code from Proto Files
         run: |
@@ -46,9 +46,9 @@ jobs:
         env:
           PAT_TOKEN: ${{ secrets.protos_token }}
         run: |
-          git config --global user.name "beka00"
+          git config --global user.name "bekasyl00"
           git config --global user.email "bekajaksylyk07@gmail.com"
 
           git add .
           git commit -m "auto-generate pb.go files" || echo "No changes to commit"
-          git push https://x-access-token:${PAT_TOKEN}@github.com/yourusername/my-protos-gen.git HEAD:main
+          git push https://x-access-token:${PAT_TOKEN}@github.com/bekasyl00/my-protos-gen.git HEAD:main
