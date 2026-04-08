@@ -29,7 +29,7 @@ jobs:
 
       - name: Clone Proto Files Repository
         run: |
-          git clone https://github.com/yourusername/my-protos.git
+          git clone https://github.com/bekasyl00/my-protos.git
 
       - name: Generate Go Code from Proto Files
         run: |
