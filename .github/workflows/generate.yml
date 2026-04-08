@@ -44,7 +44,7 @@ jobs:
 
       - name: Commit and Push Generated Files
         env:
-          PAT_TOKEN: ${{ secrets.protos_token }}
+          PAT_TOKEN: ${{ secrets.PROTOS-TOKEN }}
         run: |
           git config --global user.name "bekasyl00"
           git config --global user.email "bekajaksylyk07@gmail.com"
